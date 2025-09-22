@@ -5,38 +5,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elevare Collective VA</title>
   <style>
+    /* Base styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
       background: #f9f9f9;
       color: #333;
     }
+
+    /* Header */
     header {
-      background: #4b0082;
+      background: linear-gradient(135deg, #20c997, #3cb371); /* teal → green gradient */
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
+      position: relative;
+      overflow: hidden;
     }
-    h1 { margin: 0; }
+
+    header img {
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Decorative splats */
+    header::before, header::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.25;
+      z-index: 0;
+    }
+
+    header::before {
+      width: 150px;
+      height: 150px;
+      background: #ff6b6b; /* coral splat */
+      top: -40px;
+      right: 50px;
+    }
+
+    header::after {
+      width: 200px;
+      height: 200px;
+      background: #20c997; /* teal splat */
+      bottom: -60px;
+      left: -70px;
+    }
+
+    /* Sections */
     section {
-      padding: 2rem;
+      padding: 2rem 1rem;
       max-width: 700px;
       margin: auto;
     }
+
+    section h2 {
+      color: #20c997; /* teal headings */
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #ff6b6b; /* coral links */
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
     footer {
       background: #eee;
       padding: 1rem;
       font-size: 0.9em;
+      color: #555;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      header img {
+        height: 60px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <!-- Replace logo.png with your actual Elevare Social logo file -->
+    <img src="logo.png" alt="Elevare Social Logo">
     <h1>Elevare Collective VA</h1>
     <p>Virtual Assistance for Entrepreneurs & Small Businesses</p>
   </header>
-  
+
   <section>
     <h2>Welcome!</h2>
     <p>
@@ -44,12 +136,12 @@
       From admin tasks to creative projects, we help you focus on growth while we handle the details.
     </p>
   </section>
-  
+
   <section>
     <h2>Contact</h2>
     <p>Email us at: <a href="mailto:hello@elevarecollectiveva.com">hello@elevarecollectiveva.com</a></p>
   </section>
-  
+
   <footer>
     © 2025 Elevare Collective VA. All rights reserved.
   </footer>
