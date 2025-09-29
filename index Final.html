@@ -2,56 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elevare Collective VA</title>
+  <title>My Project</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #F7FFF7; /* soft background */
+      color: #1A535C; /* dark accent */
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+      color: white;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .hero {
+      position: relative;
       text-align: center;
-      background: #f9f9f9;
+      padding: 6rem 2rem;
+      overflow: hidden;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1A535C;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
       color: #333;
     }
-    header {
-      background: #4b0082;
-      color: white;
-      padding: 2rem;
+
+    /* Blobs */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.35;
+      filter: blur(60px);
+      z-index: -1;
     }
-    h1 { margin: 0; }
-    section {
-      padding: 2rem;
-      max-width: 700px;
-      margin: auto;
+
+    .blob.coral {
+      width: 400px; height: 400px;
+      background: #FF6B6B;
+      top: -100px; left: -120px;
     }
-    footer {
-      background: #eee;
-      padding: 1rem;
-      font-size: 0.9em;
+
+    .blob.teal {
+      width: 500px; height: 500px;
+      background: #4ECDC4;
+      top: 200px; right: -200px;
+    }
+
+    .blob.mint {
+      width: 300px; height: 300px;
+      background: #A8E6CF;
+      bottom: -100px; left: 40%;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Elevare Collective VA</h1>
-    <p>Virtual Assistance for Entrepreneurs & Small Businesses</p>
+    <img src="new-logo.png" alt="Logo">
+    <h1>My Project</h1>
   </header>
-  
-  <section>
-    <h2>Welcome!</h2>
-    <p>
-      Elevare Collective VA supports your business with reliable, flexible, and creative virtual assistance.  
-      From admin tasks to creative projects, we help you focus on growth while we handle the details.
-    </p>
+
+  <section class="hero">
+    <div class="blob coral"></div>
+    <div class="blob teal"></div>
+    <div class="blob mint"></div>
+
+    <h2>Fresh New Look</h2>
+    <p>Now styled with corals, teals, and mint greens 🌊🌿✨</p>
   </section>
-  
-  <section>
-    <h2>Contact</h2>
-    <p>Email us at: <a href="mailto:hello@elevarecollectiveva.com">hello@elevarecollectiveva.com</a></p>
-  </section>
-  
-  <footer>
-    © 2025 Elevare Collective VA. All rights reserved.
-  </footer>
 </body>
 </html>
